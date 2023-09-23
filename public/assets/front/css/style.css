@@ -1,0 +1,885 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bgmain: #0090ff;
+    --lightblue: #77c4ff;
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+.my-margin-top {
+    margin-top: 66px;
+}
+
+.h-font {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS for Scrollbar Starts --------------------- */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0B88E2;
+    border-radius: 120px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* CSS for Scrollbar Ends --------------------- */
+
+
+/* Navigation Bar CSS Starts --------------------*/
+.navbar-brand {
+    color: #0090FF;
+}
+
+.search-icon {
+    color: #0090FF;
+}
+
+.navbar-brand:hover {
+    color: #0090FF;
+}
+
+.my-navlink {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    margin: 0px 18px;
+    padding: 5px 10px;
+    font-weight: 400;
+    position: relative;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.my-navlink:hover {
+    color: #0090FF;
+}
+
+.bg-main {
+    background-color: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+/* Navigation Bar CSS Ends --------------------------*/
+
+
+/* Search Banner CSS Starts ------------------------*/
+.hero-img {
+    width: 90%;
+    border-radius: 40px 5px 40px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.search-banner {
+    background-image: linear-gradient(rgba(0, 144, 255, 0.7), rgba(0, 144, 255, 0.7)),
+        url('img/bgmain.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Search Banner CSS Ends ------------------------*/
+
+/* Button CSS Starts ------------------------*/
+
+.btn-blue {
+    background-color: transparent;
+    border: 2px solid var(--bgmain);
+    padding: 5px 20px;
+    border-radius: 50px;
+    box-shadow: none;
+    text-decoration: none;
+    color: var(--bgmain);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-blue:hover {
+    color: white;
+    background-color: var(--bgmain);
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.hero-btn {
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 9px 20px;
+    font-size: 21px;
+    border-radius: 100px;
+}
+
+.fa-arrow-right {
+    transition: 0.3s;
+}
+
+.hero-btn:hover .fa-arrow-right {
+    transform: translateX(6px);
+}
+
+/* Button CSS Ends ---------------------*/
+
+
+
+/* CSS for Our Brands Starts ---------------------- */
+.owl-carousel .owl-item img {
+    width: 50px !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: lightblue;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: black;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: red;
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -30px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: gray;
+}
+
+.owl-carousel .item a {
+    color: #0090FF;
+    text-decoration: none;
+    font-size: 33px;
+    font-weight: 300;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.owl-carousel .item a:hover {
+    color: gray;
+}
+
+.brand-box a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.brand-box {
+    border-radius: 4px;
+    padding: 10px 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    border: 2px solid #ededed;
+}
+
+.brand-box:hover {
+    transform: translateY(-6px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* CSS for Our Services Section Starts ------------------ */
+
+.service-box {
+    border-radius: 11px;
+    transition: 0.3s;
+    border: 3px solid #f1f1f1;
+}
+
+.service-link {
+    text-decoration: none;
+    color: black;
+}
+
+.service-link:hover .service-box {
+    transform: translateY(-8px);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+/* CSS for Testimonial Starts ------------------------ */
+
+.review {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 15px;
+    margin: 20px 10px;
+    transition: 0.3s;
+}
+
+.review a {
+    color: #0090FF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.review .fa-star {
+    color: orange;
+}
+
+.review .fa-quote-left {
+    color: #0090FF;
+}
+
+.bg-review {
+    background-color: #eaeaea;
+}
+
+/* CSS for Help Section Starts ---------------------*/
+
+.fa-pencil {
+    color: #0090FF;
+}
+
+/* CSS for Help Section Ends ---------------------*/
+
+
+
+/* CSS for Blog Section Starts ---------------------*/
+
+.blog {
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+}
+
+.btn-blog {
+    color: #0090FF;
+    position: relative;
+    transition: 0.1s;
+}
+
+.btn-blog:hover {
+    color: #0090FF;
+}
+
+.btn-blog .fa-angle-right {
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-blog:hover .fa-angle-right {
+    transform: translateX(6px);
+}
+
+.blog-link {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-link img {
+    border-radius: 8px 8px 0 0;
+}
+
+.blog:hover {
+    transform: scale(1.02);
+    display: block;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.blog-tag {
+    text-decoration: none;
+    color: white;
+    background-color: #0090FF;
+    border-radius: 100px;
+    padding: 3px 20px;
+    margin-top: -25px;
+    border: 4px solid white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.blog-tag:hover {
+    color: white;
+}
+
+.blog-text i {
+    font-size: 16px;
+}
+
+.blog-text span {
+    font-size: 14px;
+}
+
+.fa-user,
+.fa-calendar-days {
+    color: #0090FF;
+    font-size: 22px;
+}
+
+.blog-text {
+    padding-bottom: 12px;
+}
+
+/* CSS for Blog Section Ends ---------------------*/
+
+
+
+/* CSS for Accordian Starts -------------------------- */
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(img/down-arrow.png);
+}
+
+.accordion-button::after {
+    background-image: url(img/down-arrow.png);
+}
+
+.accordion-button {
+    color: white;
+    position: relative;
+    font-weight: 600;
+    background-color: #0090FF;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #0090FF;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    background-color: #0090FF;
+}
+
+.accordion-body {
+    border: 0px solid #0090FF;
+    border-radius: 0 0 7px 7px;
+    background-color: white;
+}
+
+.accordion-item {
+    border: none;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+.fa-circle {
+    font-size: 7px;
+    margin-right: 7px;
+}
+
+/* CSS for Accordian Ends -------------------------- */
+
+
+/*<!-- Style for rating starts -->*/
+
+#callus-box {
+    position: fixed;
+    bottom: 20px;
+    left: -3px;
+    z-index: 99;
+    background-color: #0090FF;
+    border: 2px solid white;
+    border-radius: 0 20px 20px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.rate-p {
+    font-size: 16px;
+}
+
+#callus-btn {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+}
+
+.call-rotate {
+    transform: rotate(90deg);
+    height: 3px;
+    color: white;
+    font-weight: 600;
+}
+
+.callus-innerbox {
+    line-height: 10px;
+}
+
+#callus-num a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#callus-num a:hover {
+    color: rgb(247, 206, 175);
+}
+
+.fa-star {
+    font-size: 22px;
+}
+
+.siderate-box {
+    top: 200px;
+    right: 0;
+    z-index: 99;
+    cursor: pointer;
+    background-color: #0090FF;
+    border-radius: 20px 0 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/*============= CSS for Rating ==========================*/
+.panel {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 90%;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.panel form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+fieldset {
+    margin: 20px 0 40px;
+}
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 21px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+.rating>input:checked~label,
+
+.rating:not(:checked)>label:hover,
+
+.rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+.rating>input:not(:checked):hover~label,
+.rating>input:checked:hover~label {
+    color: #F97B1A;
+}
+
+.rate-input,
+label {
+    cursor: pointer;
+}
+
+.rate-people {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    width: 180px;
+    margin-left: 10px;
+    text-align: left !important;
+}
+
+.rate-input[type="submit"] {
+    margin-top: 5px;
+    background-color: #302d2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+}
+
+.rate-input[type="submit"]:focus {
+    outline: 0;
+}
+
+.rate-input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.rate-input[type="submit"]:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.bg-222 {
+    background-color: #F8F9FA;
+}
+
+.border-rating {
+    border-top: 1px solid #b7b7b7;
+}
+
+.m-my-margin {
+    margin-bottom: -20px;
+}
+
+.heading-rate {
+    font-size: 18px;
+    color: #183153;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* Style for rating ends ----------------*/
+
+
+/* CSS for Footer Starts --------------------*/
+.footer {
+    background-image: linear-gradient(rgba(0, 144, 255, 0.5), rgba(0, 0, 0, 0.9)), url('../image/footer-bg.jpg');
+}
+
+.fa-ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.fa-hashtag {
+    color: white;
+}
+
+/* CSS for Achievments Section Starts ------------------*/
+
+.bg-achievment {
+    background-color: rgba(0, 0, 0, 0.015);
+}
+
+/* CSS for Support Page Starts ----------------------- */
+
+.support-box {
+    background-color: #0271AD;
+}
+
+.frame-box {
+    overflow: hidden;
+    height: 500px;
+    border-radius: 10px;
+    border: 3px solid #008FFD;
+}
+
+.faq-box {
+    height: 500px;
+    overflow-y: auto;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #008FFD;
+}
+
+.faq-box::-webkit-scrollbar {
+    display: none;
+}
+
+.faq-heading {
+    background-color: #008FFD;
+    border-bottom: 3px solid #008FFD;
+    padding: 6px 0;
+    color: white;
+}
+
+/* CSS for Contact Page ------------------- */
+
+.contact-boxes {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 27px 10px;
+    border-radius: 18px;
+}
+
+.contact-boxes a,
+.contact-boxes p {
+    color: #195c8e;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.label1 {
+    margin-left: 10px;
+    color: #0090FF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.label1 i {
+    font-size: 20px;
+}
+
+.input1 {
+    font-size: 16px;
+    border: 2px solid #e8e8e8;
+    border-radius: 7px;
+    padding: 12px 20px;
+    resize: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+.form-control,
+.form-select {
+    box-shadow: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+}
+
+.form-bg {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 18px;
+}
+
+.contact-img {
+    border-radius: 18px;
+}
+
+.err {
+    color: red;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.rating-text {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.nav-search {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 116px;
+    z-index: 9999;
+    background-color: white;
+}
+
+.nav-search-div {
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.search-inp-nav {
+    border: 2px solid #0090ff;
+    border-radius: 100px;
+    outline: none;
+    box-shadow: none;
+    padding: 14px 28px;
+    font-size: 18px;
+    background-color: whitesmoke;
+}
+
+#navSearchBtn {
+    cursor: pointer;
+}
+
+.close-thenav {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    padding: 5px;
+    border-radius: 0 0 0 8px;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.close-thenav i {
+    font-size: 25px;
+    color: gray;
+}
+
+.searchInBtn {
+    background-color: #0090ff;
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    width: 50px;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+#searchEmpty {
+    background-color: transparent;
+    position: absolute;
+    color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    width: 50px;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-nav-list {
+    background-color: white;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    width: 70%;
+}
+
+.search-nav-list ul {
+    list-style: none;
+}
+
+.search-nav-list ul li {
+    margin-bottom: 14px;
+}
+
+.search-nav-list ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.decoration-none:hover {
+    text-transform: none;
+}
+
+/* CSS for Notification box ------------------ */
+.notification-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    z-index: 999;
+    width: 386px;
+    border: 3px solid rgb(231, 231, 231);
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #0090FF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.notification-box {
+    width: 360px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bg-notification {
+    background-color: #e6e6e6;
+}
+
+.notification-box p {
+    font-size: 15px;
+}
+
+.close-notification {
+    cursor: pointer;
+}
+
+.open-support {
+    color: white;
+    cursor: pointer;
+    padding: 6px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: #0090FF;
+}
+
+.close-notification-box {
+    color: #0090FF;
+    cursor: pointer;
+}
+
+.bg-light-noti {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}

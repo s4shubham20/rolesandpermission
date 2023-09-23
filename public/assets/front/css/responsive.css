@@ -1,0 +1,173 @@
+/* For 1500px -------------------*/
+
+@media(max-width:1500px) {}
+
+/* For 1400px -----------------*/
+
+@media(max-width:1400px) {}
+
+/* For 1200px ------------------*/
+
+@media(max-width:1200px) {}
+
+/* For 992px -----------------*/
+
+@media(max-width:992px) {
+    .my-navlink {
+        color: black;
+        display: block;
+        margin: 5px 0px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .navbar-nav {
+        margin: 14px 0;
+    }
+
+    .nav-item {
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+    .rate-people {
+        width: 100%;
+        margin: 0;
+        text-align: center !important;
+    }
+
+    .logo-width {
+        width: 150px;
+    }
+
+    .rating-text {
+        color: black;
+        font-size: 22px;
+    }
+
+    #navSearchBtn {
+        position: fixed;
+        top: 30px;
+        right: 20px;
+    }
+}
+
+/* For 778px -----------------*/
+
+@media(max-width:778px) {
+    .my-margin-top {
+        margin-top: 55px;
+    }
+}
+
+/* For 600px -------------------*/
+
+@media(max-width:600px) {
+    .rate-input[type="submit"] {
+        padding: 8px 24px;
+    }
+
+    .rating>label:before {
+        font-size: 20px;
+    }
+
+    #navSearchBtn {
+        right: 80px;
+    }
+}
+
+/* For 576px -----------------*/
+
+@media(max-width:576px) {
+    .hero-img {
+        width: 100%;
+    }
+
+    .contact-boxes a,
+    .contact-boxes p {
+        font-size: 15px;
+    }
+
+    .brand-box {
+        padding: 10px;
+        height: 70px;
+        justify-content: center;
+    }
+
+    .nav-search-div {
+        width: 90%;
+    }
+
+    .search-nav-list {
+        top: 90px;
+        width: 90%;
+    }
+
+    .notification-box {
+        width: 280px;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: white;
+        margin-bottom: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .notification-container {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        z-index: 999;
+        width: 306px;
+        border: 2px solid rgb(231, 231, 231);
+        padding: 10px;
+        border-radius: 12px;
+        background-color: #0090FF;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .notification-box p {
+        font-size: 12px;
+    }
+}
+
+/* For 380px -------------------*/
+
+@media(max-width:400px) {
+    .btn-blue {
+        padding: 5px 15px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .form-control {
+        font-size: 17px;
+        padding: 10px 20px;
+    }
+}
+
+/* For 370px ----------------- */
+
+@media(max-width:370px) {
+    .rate-input[type="submit"] {
+        padding: 5px 10px;
+    }
+
+    .rating>label:before {
+        font-size: 16px;
+    }
+
+    .heading-rate {
+        font-size: 17px;
+        margin-right: 7px;
+    }
+
+    .panel {
+        padding: 20px 0px;
+    }
+
+    .contact-boxes a,
+    .contact-boxes p {
+        font-size: 14px;
+    }
+}
